@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        @apply bg-no-repeat bg-cover text-center;
+    } 
+    body {
+        @apply  m-0 flex flex-[1] min-h-screen items-center justify-center;
+    }
+}
+
+@layer components{
+    .clock{
+        @apply w-96 h-96 border-[20px] relative p-7 shadow-black shadow-inner rounded-full mx-auto flex justify-center items-center ; 
+
+    }
+
+    .clock-face{
+        @apply relative w-full h-full translate-y-[-3px];
+    }
+
+    .hand{
+        @apply w-1/2 h-[6px] bg-black absolute top-1/2 rotate-90 transition-all origin-[100%] duration-[0.05s] ease-in;
+    }
+}

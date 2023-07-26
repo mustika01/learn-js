@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply bg-cyan-500 m-10 text-center text-white font-sans text-5xl;
+    }
+
+    input{
+        @apply w-24;
+    }
+
+    h2{
+        @apply font-bold text-7xl mt-14 mb-16 pt-6 ;
+    }
+    
+    img{
+        @apply mx-auto bg-rose-400 ;
+    }
+
+    label{
+        @apply mt-10;
+    }
+}
+
+@layer components{
+    .controls{
+        @apply mb-12;
+    }
+
+}
